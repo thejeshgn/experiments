@@ -339,7 +339,7 @@
                content += "<td style='width:250px'>" + gam.x + "</td></tr>";
                content += "<tr><td><b>Lon</b></td>";
                content += "<td>" + gam.y + "</td></tr>";
-               content += "<tr><td colspan='2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id='btnPHP' type='button' style='Height:30px;width:70px' onclick= 'SaveAnyLocation()' value='Save'></td></tr>";
+               content += "<tr><td colspan='2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id='btnPHP' type='button' style='Height:30px;width:70px' onclick= 'SaveAnyLocation()' value='Mark this Location'></td></tr>";
                content += "</table>";
 //               var content = "<b>X:</b>" + gam.x + "<br/><br/><b>Y:</b>" + gam.y + "<br/><br/>"
 //                + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id='btnPHP' type='button' onclick= 'SaveAnyLocation()' value='Save' >";
@@ -369,7 +369,7 @@
                content += "<td style='width:250px'>" + gam.x + "</td></tr>";
                content += "<tr><td><b>Lon</b></td>";
                content += "<td>" + gam.y + "</td></tr>";
-               content += "<tr><td colspan='2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id='btnPHP' type='button' style='Height:30px;width:70px' onclick= 'SaveAnyLocation()' value='Save'></td></tr>";
+               content += "<tr><td colspan='2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id='btnPHP' type='button' style='Height:30px;width:70px' onclick= 'SaveAnyLocation()' value='Mark this Location'></td></tr>";
                content += "</table>";
 //               var content = "<b>X:</b>" + gam.x + "<br/><br/><b>Y:</b>" + gam.y + "<br/><br/>"
 //                + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id='btnPHP' type='button' onclick= 'SaveAnyLocation()' value='Save' >";
@@ -399,13 +399,34 @@
 		if(document.getElementById(field_mapping["mapping"][0]["long"])){
 			document.getElementById(field_mapping["mapping"][0]["long"]).value=gam.y;
 		}
-		if(document.getElementById(field_mapping["mapping"][0]["ac"])){
-			document.getElementById(field_mapping["mapping"][0]["ac"]).value=Attribute.Location[0].ACN;
+		if(document.getElementById(field_mapping["mapping"][0]["acname"])){
+			document.getElementById(field_mapping["mapping"][0]["acname"]).value=Attribute.Location[0].ACN;
 		}
-		if(document.getElementById(field_mapping["mapping"][0]["ward"])){
-			document.getElementById(field_mapping["mapping"][0]["ward"]).value=Attribute.Location[0].WNO;
+		if(document.getElementById(field_mapping["mapping"][0]["acnum"])){
+			document.getElementById(field_mapping["mapping"][0]["acnum"]).value=Attribute.Location[0].ACNO;
+		}
+		if(document.getElementById(field_mapping["mapping"][0]["wardnum"])){
+			document.getElementById(field_mapping["mapping"][0]["wardnum"]).value=Attribute.Location[0].WNO;
+		}
+		if(document.getElementById(field_mapping["mapping"][0]["wardname"])){
+			document.getElementById(field_mapping["mapping"][0]["wardname"]).value=Attribute.Location[0].WNAME;
+		}
+		if(document.getElementById(field_mapping["mapping"][0]["eroc"])){
+			document.getElementById(field_mapping["mapping"][0]["eroc"]).value=Attribute.Location[0].EROC;
+		}
+		if(document.getElementById(field_mapping["mapping"][0]["eroa"])){
+			document.getElementById(field_mapping["mapping"][0]["eroa"]).value=Attribute.Location[0].EROA;
+		}
+		if(document.getElementById(field_mapping["mapping"][0]["polb"])){
+			document.getElementById(field_mapping["mapping"][0]["polb"]).value=Attribute.Location[0].POLB;
+		}
+		if(document.getElementById(field_mapping["mapping"][0]["pano"])){
+			document.getElementById(field_mapping["mapping"][0]["pano"]).value=Attribute.Location[0].PANO;
 		}
 
+		if(document.getElementById(field_mapping["mapping"][0]["opano"])){
+			document.getElementById(field_mapping["mapping"][0]["opano"]).value=Attribute.Location[0].OPANO;
+		}
 
        }
 
