@@ -1,0 +1,103 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <title>QueryTask with geometry, results as an InfoWindow</title>
+    <link rel="stylesheet" type="text/css" href="http://serverapi.arcgisonline.com/jsapi/arcgis/1.6/js/dojo/dijit/themes/tundra/tundra.css">
+    <link rel="stylesheet" type="text/css" href="http://serverapi.arcgisonline.com/jsapi/arcgis/1.6/js/dojo/dojox/grid/resources/Grid.css">
+    <link rel="stylesheet" type="text/css" href="http://serverapi.arcgisonline.com/jsapi/arcgis/1.6/js/dojo/dojox/grid/resources/tundraGrid.css">
+
+    <script type="text/javascript">
+      djConfig = {
+        parseOnLoad:true
+      }
+    </script>
+
+
+
+ <script type="text/javascript">djConfig = { parseOnLoad:true }</script>
+ <script type="text/javascript" src="http://serverapi.arcgisonline.com/jsapi/arcgis/?v=1.6"></script>
+<script type="text/javascript">
+var type="MarkMyLocation";
+//var type="MarkAnyLocation";
+var field_mapping = {"mapping": [
+    
+
+{
+        "lat": "field_lat",
+        "long": "field_long",
+        "ac": 	"field_ac",
+        "ward": "field_ward"
+    }
+]
+};
+
+</script>
+
+ <script type="text/javascript" src="api-search-mark.js"></script>
+    
+</head>
+<body class="tundra">
+    <div style="width: 600px; height: 30px; border: 1px solid #000;" align="center">
+        Serach/Mark My Loaction/ Mark Any Location
+    </div>
+    <div id="mp" >
+        <input type="radio" name="serachtype" id="s1" onclick="changeSelect(this);">By Pincode/Locality/Road</input>
+        <table id="parm" style="">
+            <tr>
+                <td>
+                    Pin code
+                </td>
+                <td>
+                    <input type="text" id="pin" style="width: 100px;" />
+                </td>
+                <td>
+                    Locality
+                </td>
+                <td>
+                    <input type="text" id="locality" style="width: 100px;" />
+                </td>
+                <td>
+                    Road
+                </td>
+                <td>
+                    <input type="text" id="road" style="width: 100px;" />
+                </td>
+            </tr>
+        </table>
+        <input type="radio" name="serachtype" id="s2" onclick="changeSelect1(this);">By Landmark/Area</input>
+        <table id="parm1">
+            <tr>
+                <td>
+                    Land Mark
+                </td>
+                <td>
+                    <input type="text" id="landmark" style="width: 100px;" />
+                </td>
+                
+                <td>
+                   Area
+                </td>
+                <td>
+                    <input type="text" id="Area" style="width: 100px;" />
+                </td>
+                
+            </tr>
+            
+        </table>
+      <input type="button" id="btnSearch" value="Search" onclick="executeQueryTask();"
+                        
+           />
+              
+        <div id="mapDiv" style="width: 600px; height: 400px; border: 1px solid #000;">
+        </div>
+
+                    Lat:<input type="text" id="field_lat" style="width: 100px;" />
+                    Long:<input type="text" id="field_long" style="width: 100px;" />
+                    AC:<input type="text" id="field_ac" style="width: 100px;" />
+                    WARD:<input type="text" id="field_ward" style="width: 100px;" />
+
+
+</body>
+</html>

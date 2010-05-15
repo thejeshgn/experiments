@@ -1,0 +1,89 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <title>Janaggraha</title>
+    
+    <!--ArcGis Server API-->
+    <link rel="stylesheet" type="text/css" href="http://serverapi.arcgisonline.com/jsapi/arcgis/1.6/js/dojo/dijit/themes/tundra/tundra.css">
+
+<script type="text/javascript" src="http://serverapi.arcgisonline.com/jsapi/arcgis/?v=1.6"></script>
+<script type="text/javascript" src="api-markers.js"></script>
+    
+<script type="text/javascript" >
+var marker_results1 = {"results": [
+    
+
+{
+        "name": "Discussions",
+        "desc": "Lalbagh metro tree cutting",
+        "long": 1474240.433,
+        "lat": -528040.405
+    },
+
+{
+        "name": "Stop metro event",
+        "desc": "Lalbagh metro tree cutting",
+        "long": 1474241.433,
+        "lat": -528041.405
+    }
+]
+};
+
+
+var marker_results2 = {"results": [
+    {
+        "name": "Event",
+        "desc": "my results, go to <a href='http://ijanaagraha.org/blog'>some link</a>",
+        "long": 1464006.0021466203,
+        "lat": -538083.3186863576
+    },
+{
+        "name": "Blog",
+        "desc": "my questions",
+        "long": 1460061.938702938,
+        "lat": -519151.81415668206
+    }
+]
+};
+
+var marker_results3 = {"results": [
+    
+
+{
+        "name": "Stop metro event",
+        "desc": "Lalbagh metro tree cutting",
+        "lat": 	-539660.9440638305,
+        "long": 1463118.5878717918
+    }
+]
+};
+
+
+var j1 = new janaagrahaMaps();
+var j2 = new janaagrahaMaps();
+//var j3 = new janaagrahaMaps();
+
+function start(){
+	j1.initialize("mapDiv1",marker_results1);
+	j2.initialize("mapDiv2",marker_results2);
+	//j3.initialize("mapDiv3",marker_results3);
+}
+
+dojo.addOnLoad(start);
+
+
+    </script>
+
+  </head>
+  <body class="tundra">
+
+    <div id="mapDiv1" style="width:600px; height:600px; border:1px solid #000; visibility: hidden;" ></div>
+
+    <div id="mapDiv2" style="width:800px; height:600px; border:1px solid #000; visibility: hidden;" ></div>
+
+ <div id="mapDiv3" style="width:600px; height:600px; border:1px solid #000; visibility: hidden;" ></div>
+
+  </body>
+</html>
