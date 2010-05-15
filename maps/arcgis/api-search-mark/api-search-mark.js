@@ -287,7 +287,7 @@
                content += "<td>" + graphic.attributes.ERO_Addres + "</td></tr>";
                content += "<tr><td><b> ERO Contact No.    </b></td>";
                content += "<td>" + graphic.attributes.ERO_Con_No + "</td></tr>";
-               content += "<tr><td colspan='2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id='btnPHP' type='button' style='Height:30px;width:70px' onclick= 'SaveMyLocation()' value='Save' ></td></tr>";
+               content += "<tr><td colspan='2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id='btnPHP' type='button' style='Height:30px;width:150px' onclick= 'SaveMyLocation()' value='Mark this Location' ></td></tr>";
                content += "</table>";
                Attribute = { "Location": [
                    { "ACNO": graphic.attributes.AC_NO_,       // First element
@@ -339,10 +339,10 @@
                content += "<td style='width:250px'>" + gam.x + "</td></tr>";
                content += "<tr><td><b>Lon</b></td>";
                content += "<td>" + gam.y + "</td></tr>";
-               content += "<tr><td colspan='2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id='btnPHP' type='button' style='Height:30px;width:70px' onclick= 'SaveAnyLocation()' value='Mark this Location'></td></tr>";
+               content += "<tr><td colspan='2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id='btnPHP' type='button' style='Height:30px;width:150px' onclick= 'SaveAnyLocation()' value='Mark this Location'></td></tr>";
                content += "</table>";
 //               var content = "<b>X:</b>" + gam.x + "<br/><br/><b>Y:</b>" + gam.y + "<br/><br/>"
-//                + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id='btnPHP' type='button' onclick= 'SaveAnyLocation()' value='Save' >";
+//                + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id='btnPHP' type='button' onclick= 'SaveAnyLocation()' value='Mark this Location' >";
 
                map.infoWindow.setContent(content);
                // SET INFOWINDOW LOCAITON
@@ -369,10 +369,10 @@
                content += "<td style='width:250px'>" + gam.x + "</td></tr>";
                content += "<tr><td><b>Lon</b></td>";
                content += "<td>" + gam.y + "</td></tr>";
-               content += "<tr><td colspan='2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id='btnPHP' type='button' style='Height:30px;width:70px' onclick= 'SaveAnyLocation()' value='Mark this Location'></td></tr>";
+               content += "<tr><td colspan='2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id='btnPHP' type='button' style='Height:30px;width:150px' onclick= 'SaveAnyLocation()' value='Mark this Location'></td></tr>";
                content += "</table>";
 //               var content = "<b>X:</b>" + gam.x + "<br/><br/><b>Y:</b>" + gam.y + "<br/><br/>"
-//                + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id='btnPHP' type='button' onclick= 'SaveAnyLocation()' value='Save' >";
+//                + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id='btnPHP' type='button' onclick= 'SaveAnyLocation()' value='Mark this Location' >";
 
                map.infoWindow.setContent(content);
                // SET INFOWINDOW LOCAITON
